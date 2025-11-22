@@ -27,8 +27,8 @@ function SedjatiWireframes() {
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <div className="h-6 w-40 bg-stone-200 rounded" />
-            <h1 className="text-3xl md:text-4xl font-bold leading-tight">Belajar, Berkembang, dan Berkarya di Desa</h1>
-            <p className="text-stone-600 max-w-prose">Bimbel pados ilmu adalah bimbel pelajaran yang ditujukan untuk para murid agar dapat belajar lebih fokus dan mendapatkan pendampingan dari guru secara privat. Tombol utama mengarah ke pendaftaran & jadwal hari ini.</p>
+            <h1 className="text-3xl md:text-4xl font-bold leading-tight">Belajar, Berkembang, dan Berkarya di Desa Gajah</h1>
+            <p className="text-stone-600 max-w-prose">Bimbel pados ilmu adalah bimbel pelajaran utama yang ditujukan untuk para murid agar dapat belajar lebih fokus dan mendapatkan pendampingan dari guru secara privat. Tombol utama mengarah ke pendaftaran & jadwal hari ini.</p>
             <div className="flex gap-3">
               <button className="px-5 py-3 rounded-xl bg-green-600 text-white">Daftar Sekarang</button>
               <button className="px-5 py-3 rounded-xl border border-stone-300">Lihat Jadwal Hari Ini</button>
@@ -41,6 +41,8 @@ function SedjatiWireframes() {
           </div>
           <div className="aspect-video rounded-2xl border border-dashed border-stone-300 grid place-items-center text-stone-400">Hero Image/Video</div>
         </section>
+
+        <h1></h1>
 
         {/* KARTU PROGRAM */}
         <section id="program" className="space-y-6">
