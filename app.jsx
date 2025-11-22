@@ -28,7 +28,7 @@ function SedjatiWireframes() {
           <div className="space-y-4">
             <div className="h-6 w-40 bg-stone-200 rounded" />
             <h1 className="text-3xl md:text-4xl font-bold leading-tight">Belajar, Berkembang, dan Berkarya di Desa</h1>
-            <p className="text-stone-600 max-w-prose">Wireframe: area tagline + CTA. Jelaskan nilai Sedjati, 1–2 kalimat. Tombol utama mengarah ke pendaftaran & jadwal hari ini.</p>
+            <p className="text-stone-600 max-w-prose">Bimbel pados ilmu adalah bimbel pelajaran yang ditujukan untuk para murid agar dapat belajar lebih fokus dan mendapatkan pendampingan dari guru secara privat. Tombol utama mengarah ke pendaftaran & jadwal hari ini.</p>
             <div className="flex gap-3">
               <button className="px-5 py-3 rounded-xl bg-green-600 text-white">Daftar Sekarang</button>
               <button className="px-5 py-3 rounded-xl border border-stone-300">Lihat Jadwal Hari Ini</button>
