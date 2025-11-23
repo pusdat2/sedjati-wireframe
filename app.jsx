@@ -39,10 +39,14 @@ function SedjatiWireframes() {
               <div className="h-5 w-24 bg-stone-200 rounded" />
             </div>
           </div>
-          <div className="aspect-video rounded-2xl border border-dashed border-stone-300 grid place-items-center text-stone-400">Hero Image/Video</div>
+          <div className="aspect-video rounded-2xl border border-dashed border-stone-300 overflow-hidden">
+              <img
+                src="/pictures/foto website 1.jpg"
+                alt="Hero Taman Belajar Sedjati"
+                className="w-full h-full object-cover"
+              />
+            </div>
         </section>
-
-        <h1></h1>
 
         {/* KARTU PROGRAM */}
         <section id="program" className="space-y-6">
@@ -232,7 +236,7 @@ function SedjatiWireframes() {
         <div className="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6 text-sm">
           <div>
             <div className="h-6 w-40 bg-stone-200 rounded mb-3" />
-            <p className="text-stone-600">Alamat, jam operasional, dan peta singkat.</p>
+            <p className="text-stone-600">Desa Gajah Rt 02 / Rw 03, Kecamatan Baureno, Kabupaten Bojonegoro</p>
           </div>
           <div className="grid grid-cols-2 gap-2">
             {Array.from({length:6}).map((_,i)=> (
