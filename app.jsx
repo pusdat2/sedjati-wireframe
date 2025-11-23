@@ -1,11 +1,49 @@
 function SedjatiWireframes() {
+  const jadwalHariIni = [
+  {
+    nama: "Aisyah",
+    waktu: "15.00–16.00",
+    program: "Kursus pelajaran",
+    kelas: "Lantai 1",
+    mentor: "Kak Ahmad",
+    status: "Berlangsung",
+  },
+  {
+    nama: "Budi",
+    waktu: "16.00–17.00",
+    program: "Kelas Bahasa Inggris",
+    kelas: "Lantai 2",
+    mentor: "Kak Rina",
+    status: "Berlangsung",
+  },
+  {
+    nama: "Citra",
+    waktu: "13.00–14.00",
+    program: "Sempoa Matematika",
+    kelas: "Lantai 1",
+    mentor: "Kak Dimas",
+    status: "Selesai",
+  },
+  {
+    nama: "Dani",
+    waktu: "14.00–15.00",
+    program: "Sanggar Lukis",
+    kelas: "Ruang Kreatif",
+    mentor: "Kak Sari",
+    status: "Menunggu",
+  },
+  ];
   return (
     <div className="min-h-screen bg-stone-50 text-stone-800">
       {/* Top Bar / Navigation */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-stone-200">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-green-600" />
+            <img
+                src="/pictures/Logo BPI.png"
+                alt="Logo Taman Belajar Sedjati"
+                className="w-12 h-12 rounded-xl object-cover"
+            />
             <span className="font-semibold tracking-wide">Bimbel Pados Ilmu</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -41,7 +79,7 @@ function SedjatiWireframes() {
           </div>
           <div className="aspect-video rounded-2xl border border-dashed border-stone-300 overflow-hidden">
               <img
-                src="sedjati-wireframe/pictures/1.jpg"
+                src="/pictures/1.jpg"
                 alt="Hero Taman Belajar Sedjati"
                 className="w-full h-full object-cover"
               />
@@ -58,8 +96,8 @@ function SedjatiWireframes() {
             {[
               'Bimbel Pelajaran',
               'Kelas Bahasa',
-              'Coding Club',
-              'Learning Society',
+              'Sempoa Matematika',
+              'Sanggar Lukis',
             ].map((label) => (
               <div key={label} className="rounded-2xl border border-stone-200 p-4 bg-white">
                 <div className="h-28 rounded-xl bg-stone-100 mb-4" />
@@ -85,11 +123,11 @@ function SedjatiWireframes() {
               <div key={i} className="rounded-2xl border border-stone-200 p-4 bg-white">
                 <div className="h-32 rounded-xl bg-stone-100 mb-4" />
                 <div className="text-xs text-stone-500">Sabtu, 16.00</div>
-                <h3 className="font-medium">Judul Event</h3>
-                <p className="text-sm text-stone-600">Ringkasan 1–2 kalimat.</p>
+                <h3 className="font-medium">persiapan ujian semester gasal</h3>
+                <p className="text-sm text-stone-600">ujian semester gasal sudah didepan mata, mari kita persiapkan dengan belajar yang lebih serius dan rajin agar mendapatkan nilai yang sempurna</p>
                 <div className="mt-3 flex gap-2">
                   <span className="text-xs px-2 py-1 rounded-full bg-stone-100">Gratis</span>
-                  <span className="text-xs px-2 py-1 rounded-full bg-stone-100">Kuota 30</span>
+                  <span className="text-xs px-2 py-1 rounded-full bg-stone-100">Kuota 10 anak</span>
                 </div>
               </div>
             ))}
@@ -107,26 +145,34 @@ function SedjatiWireframes() {
           </div>
           <div className="overflow-hidden rounded-2xl border border-stone-200">
             <table className="w-full text-sm">
-              <thead className="bg-stone-100 text-stone-600">
-                <tr>
-                  <th className="text-left p-3">Waktu</th>
-                  <th className="text-left p-3">Program</th>
-                  <th className="text-left p-3">Kelas/Ruang</th>
-                  <th className="text-left p-3">Mentor</th>
-                  <th className="text-left p-3">Status</th>
-                </tr>
-              </thead>
-              <tbody className="bg-white">
-                {[1,2,3,4].map((i)=> (
-                  <tr key={i} className="border-t">
-                    <td className="p-3">15.00–16.00</td>
-                    <td className="p-3">Coding Club</td>
-                    <td className="p-3">Lab 1</td>
-                    <td className="p-3">Kak A</td>
-                    <td className="p-3"><span className="px-2 py-1 rounded-full text-xs bg-green-50 text-green-700">Berlangsung</span></td>
-                  </tr>
-                ))}
-              </tbody>
+          <thead className="bg-stone-100 text-stone-600">
+            <tr>
+            <th className="text-left p-3">Nama</th>
+            <th className="text-left p-3">Waktu</th>
+            <th className="text-left p-3">Program</th>
+            <th className="text-left p-3">Kelas/Ruang</th>
+            <th className="text-left p-3">Mentor</th>
+            <th className="text-left p-3">Status</th>
+          </tr>
+          </thead>
+          <tbody className="bg-white">
+            {jadwalHariIni.map((row, i) => (
+              <tr key={i} className="border-t">
+                <td className="p-3">{row.nama}</td>
+                <td className="p-3">{row.waktu}</td>
+                <td className="p-3">{row.program}</td>
+                <td className="p-3">{row.kelas}</td>
+                <td className="p-3">{row.mentor}</td>
+                <td className="p-3">
+                  <span
+                    className="px-2 py-1 rounded-full text-xs bg-green-50 text-green-700"
+                  >
+                    {row.status}
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
             </table>
           </div>
           <div className="flex gap-3">
