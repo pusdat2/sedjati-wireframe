@@ -41,7 +41,7 @@ function SedjatiWireframes() {
           </div>
           <div className="aspect-video rounded-2xl border border-dashed border-stone-300 overflow-hidden">
               <img
-                src="/pictures/1.jpg"
+                src="sedjati-wireframe/pictures/1.jpg"
                 alt="Hero Taman Belajar Sedjati"
                 className="w-full h-full object-cover"
               />
