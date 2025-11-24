@@ -101,7 +101,7 @@ function SedjatiWireframes() {
         {/* HERO */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
-            <div className="h-6 w-40 bg-stone-200 rounded" />
+            {/* <div className="h-6 w-40 bg-stone-200 rounded" /> */}
             <h1 className="text-3xl md:text-4xl font-bold leading-tight">Belajar, Berkembang, dan Berkarya di Desa Gajah</h1>
             <p className="text-stone-600 max-w-prose">Bimbel pados ilmu adalah bimbel pelajaran utama yang ditujukan untuk para murid agar dapat belajar lebih fokus dan mendapatkan pendampingan dari guru secara privat. Tombol utama mengarah ke pendaftaran & jadwal hari ini.</p>
             <div className="flex gap-3">
@@ -109,9 +109,9 @@ function SedjatiWireframes() {
               <button className="px-5 py-3 rounded-xl border border-stone-300">Lihat Jadwal Hari Ini</button>
             </div>
             <div className="flex items-center gap-4 text-xs text-stone-500">
+              {/* <div className="h-5 w-24 bg-stone-200 rounded" />
               <div className="h-5 w-24 bg-stone-200 rounded" />
-              <div className="h-5 w-24 bg-stone-200 rounded" />
-              <div className="h-5 w-24 bg-stone-200 rounded" />
+              <div className="h-5 w-24 bg-stone-200 rounded" /> */}
             </div>
           </div>
           <div className="aspect-video rounded-2xl border border-dashed border-stone-300 overflow-hidden">
@@ -158,7 +158,7 @@ function SedjatiWireframes() {
         </section>
 
         {/* EVENT & KALENDER RINGKAS */}
-        <section id="event" className="space-y-6">
+        {/* <section id="event" className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-semibold">Event Minggu Ini</h2>
             <a className="text-sm text-green-700" href="#kalender">Lihat semua →</a>
@@ -177,7 +177,7 @@ function SedjatiWireframes() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* JADWAL HARI INI */}
         <section id="jadwal" className="space-y-4">
@@ -227,7 +227,7 @@ function SedjatiWireframes() {
         </section>
 
         {/* CTA */}
-        <section id="daftar" className="rounded-3xl border border-stone-200 bg-white p-6 grid md:grid-cols-2 gap-6">
+        {/* <section id="daftar" className="rounded-3xl border border-stone-200 bg-white p-6 grid md:grid-cols-2 gap-6">
           <div className="space-y-2">
             <h3 className="text-xl font-semibold">Coba Kelas Gratis Minggu Ini</h3>
             <p className="text-stone-600">Form pendaftaran ringkas untuk calon siswa atau peserta event.</p>
@@ -238,7 +238,7 @@ function SedjatiWireframes() {
             <div className="h-11 rounded-xl border border-stone-300 bg-stone-50" />
             <button className="h-11 rounded-xl bg-green-600 text-white">Kirim</button>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* ---------- PROGRAM PAGE WIREFRAME ---------- */}
@@ -261,7 +261,7 @@ function SedjatiWireframes() {
           </div>
 
           {/* Kurikulum / Silabus singkat */}
-          <div className="grid md:grid-cols-3 gap-6">
+          {/* <div className="grid md:grid-cols-3 gap-6">
             {["Dasar Scratch","Game Edukasi","Showcase"].map((title,i)=> (
               <div key={i} className="rounded-2xl bg-white border border-stone-200 p-5">
                 <div className="h-28 rounded-xl bg-stone-100 mb-4" />
@@ -269,10 +269,10 @@ function SedjatiWireframes() {
                 <p className="text-sm text-stone-600">Deskripsi singkat 2–3 baris.</p>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Jadwal Kelas Aktif */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="text-xl font-semibold">Jadwal Kelas Aktif</h3>
               <div className="flex gap-2">
@@ -298,7 +298,7 @@ function SedjatiWireframes() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* FAQ & Form */}
           <div className="grid md:grid-cols-2 gap-6">
@@ -326,7 +326,9 @@ function SedjatiWireframes() {
       <footer className="bg-white border-t border-stone-200 mt-10">
         <div className="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6 text-sm">
           <div>
-            <div className="h-6 w-40 bg-stone-200 rounded mb-3" />
+            <div className="flex font-bold">
+            Alamat lengkap
+            </div>
             <p className="text-stone-600">Desa Gajah Rt 02 / Rw 03, Kecamatan Baureno, Kabupaten Bojonegoro</p>
           </div>
           <div className="grid grid-cols-2 gap-2">
