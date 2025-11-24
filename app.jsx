@@ -1,28 +1,28 @@
 function SedjatiWireframes() {
   const jadwalHariIni = [
   {
-    nama: "Aisyah",
-    waktu: "15.00–16.00",
-    program: "Kursus pelajaran",
-    kelas: "Lantai 1",
-    mentor: "Kak Ahmad",
+    nama: "Raffasya",
+    waktu: "14.00–15.00",
+    program: "Kursus Bahasa Arab",
+    kelas: "Lantai 1-A",
+    mentor: "Mrs. Sulthon",
     status: "Berlangsung",
   },
   {
-    nama: "Budi",
-    waktu: "16.00–17.00",
-    program: "Kelas Bahasa Inggris",
-    kelas: "Lantai 2",
-    mentor: "Kak Rina",
+    nama: "Meccadina",
+    waktu: "14.00–15.00",
+    program: "Bimbel Pelajaran",
+    kelas: "Lantai 1-B",
+    mentor: "Mrs. Mindarti",
     status: "Berlangsung",
   },
   {
-    nama: "Citra",
-    waktu: "13.00–14.00",
-    program: "Sempoa Matematika",
-    kelas: "Lantai 1",
+    nama: "Hamizan",
+    waktu: "14.00–15.00",
+    program: "Bimbel pelajaran",
+    kelas: "Lantai 1-C",
     mentor: "Kak Dimas",
-    status: "Selesai",
+    status: "Berlangsung",
   },
   {
     nama: "Dani",
@@ -31,6 +31,40 @@ function SedjatiWireframes() {
     kelas: "Ruang Kreatif",
     mentor: "Kak Sari",
     status: "Menunggu",
+  },
+  {
+    nama: "Akhtar",
+    waktu: "14.00–15.00",
+    program: "Sanggar Lukis",
+    kelas: "Ruang Kreatif",
+    mentor: "Kak Sari",
+    status: "Menunggu",
+  },
+  ];
+  const programs = [
+  {
+    title: 'Bimbel Pelajaran',
+    desc: 'Pendampingan semua mata pelajaran SD. Fokus ke pemahaman konsep, PR, dan persiapan ujian.',
+    tag: 'Gratis/Donasi',
+    image: '/pictures/foto baca buku.jpg',
+  },
+  {
+    title: 'Kelas Bahasa',
+    desc: 'Belajar Bahasa Arab & Inggris dengan metode game, kartu kata, dan percakapan sederhana.',
+    tag: 'Gratis/Donasi',
+    image: '/pictures/foto belajar 1.jpg',
+  },
+  {
+    title: 'Sempoa Matematika',
+    desc: 'Melatih logika dan kecepatan berhitung dengan alat sempoa, cocok untuk kelas 1–6 SD.',
+    tag: 'Gratis/Donasi',
+    image: '/pictures/foto belajar 2.jpg',
+  },
+  {
+    title: 'Sanggar Lukis',
+    desc: 'Kelas seni untuk mengekspresikan kreativitas melalui gambar, warna, dan cerita.',
+    tag: 'Gratis/Donasi',
+    image: '/pictures/foto belajar 3.jpg',
   },
   ];
   return (
@@ -93,19 +127,27 @@ function SedjatiWireframes() {
             <a className="text-sm text-green-700" href="#program-page">Lihat semua program →</a>
           </div>
           <div className="grid md:grid-cols-4 gap-4">
-            {[
-              'Bimbel Pelajaran',
-              'Kelas Bahasa',
-              'Sempoa Matematika',
-              'Sanggar Lukis',
-            ].map((label) => (
-              <div key={label} className="rounded-2xl border border-stone-200 p-4 bg-white">
-                <div className="h-28 rounded-xl bg-stone-100 mb-4" />
-                <h3 className="font-medium">{label}</h3>
-                <p className="text-sm text-stone-600 line-clamp-3">Ringkasan singkat program. Usia, hari, dan highlight.</p>
+            {programs.map((program) => (
+              <div
+                key={program.title}
+                className="rounded-2xl border border-stone-200 p-4 bg-white"
+              >
+                  <img
+                    src={program.image}
+                    alt={program.title}
+                    className="h-28 w-full object-cover rounded-xl mb-4"
+                  />
+                <h3 className="font-medium">{program.title}</h3>
+                <p className="text-sm text-stone-600 line-clamp-3">
+                  {program.desc}
+                </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-xs px-2 py-1 rounded-full bg-green-50 text-green-700">Gratis/Donasi</span>
-                  <button className="text-sm text-green-700">Detail →</button>
+                  <span className="text-xs px-2 py-1 rounded-full bg-green-50 text-green-700">
+                    {program.tag}
+                  </span>
+                  <button className="text-sm text-green-700">
+                    Detail →
+                  </button>
                 </div>
               </div>
             ))}
