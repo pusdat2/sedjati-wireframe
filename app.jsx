@@ -49,25 +49,25 @@ function SedjatiWireframes() {
     title: 'Bimbel Pelajaran',
     desc: 'Pendampingan semua mata pelajaran SD. Fokus ke pemahaman konsep, PR, dan persiapan ujian.',
     tag: 'Gratis/Donasi',
-    image: `${BASE_URL}pictures/foto baca buku.jpg`,
+    image: `${BASE_URL}/pictures/foto baca buku.jpg`,
   },
   {
     title: 'Kelas Bahasa',
     desc: 'Belajar Bahasa Arab & Inggris dengan metode game, kartu kata, dan percakapan sederhana.',
     tag: 'Gratis/Donasi',
-    image: `${BASE_URL}pictures/foto belajar 1.jpg`,
+    image: `${BASE_URL}/pictures/foto belajar 1.jpg`,
   },
   {
     title: 'Sempoa Matematika',
     desc: 'Melatih logika dan kecepatan berhitung dengan alat sempoa, cocok untuk kelas 1–6 SD.',
     tag: 'Gratis/Donasi',
-    image: `${BASE_URL}pictures/foto belajar 2.jpg`,
+    image: `${BASE_URL}/pictures/foto belajar 2.jpg`,
   },
   {
     title: 'Sanggar Lukis',
     desc: 'Kelas seni untuk mengekspresikan kreativitas melalui gambar, warna, dan cerita.',
     tag: 'Gratis/Donasi',
-    image: `${BASE_URL}pictures/foto belajar 3.jpg`,
+    image: `${BASE_URL}/pictures/foto belajar 3.jpg`,
   },
   ];
   return (
